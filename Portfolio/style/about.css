@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62.5%;
+    /* overflow: hidden; */
+}
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    /* overflow: auto; */
+}
+
+.navbar{
+    height: 15%;
+    /* padding: 20px 0; */
+    width: 100%;
+    color: white;
+    display: flex;
+    /* border-bottom: 3px solid white;
+    box-sizing: border-box; */
+    background-color: black;
+    position: sticky;
+    top:0px
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: bold;
+    width: 30%;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    /* border-right: 1px solid white; */
+    box-sizing: border-box;
+}
+
+.menu{
+    width: 70%;
+    /* padding: 0 10px; */
+}
+
+.list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+li{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    padding: 0.5rem;
+    color: white;
+    /* font-weight: bold; */
+}
+
+
+li a:hover{
+    
+    color: rgb(16, 120, 16);
+    background-color: white;
+    border-radius: 5px;
+}
+
+a.about-me{
+    color: rgb(16, 120, 16);
+    /* font-weight: bold; */
+    /* background-color: white; */
+    /* border-radius: 5px; */
+}
+
+
+.overflow{
+    height: 85%;
+    overflow: auto;
+}
+.about{
+    text-align: center;
+    /* height: 10%; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about h1{
+   padding: 10px 0;
+   font-size: 30px; 
+}
+
+.info{
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+    column-gap: 20px;
+}
+
+.imgcontainer{
+    /* height: 60vh; */
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+
+.imgcontainer img{
+    height: 400px;
+    width: 100%;
+}
+
+.aboutme{
+    width: 100%;
+    /* height: 60vh; */
+    /* padding: 0 10px; */
+    /* background-color: rgb(88, 250, 136); */
+    /* overflow: hidden; */
+}
+
+.aboutme p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    column-gap: 2px;
+    /* margin: 1rem 0; */
+    font-family: 'Kanit', sans-serif;
+}
+
+.aboutme h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+}
+
+.getCv{
+    margin: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: rgb(234, 234, 190);
+    border: .3rem solid yellow;
+    color: red;
+}
+
+.getCv:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border: .3rem solid yellow;
+}
+
+/* ::-webkit-scrollbar {
+    width: 20px;
+  } */
+
+@media only screen and (max-width : 600px){
+    html{
+        font-size: 35%;
+    }
+
+    .info{
+     
+        /* padding: 20px;
+        display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 20px;
+    }
+
+    .navbar{
+       position: sticky;
+       top: 0px;
+    }
+
+  }
+
+  @media only screen and (max-width : 300px){
+    html{
+        font-size: 30%;
+    }
+
+    .info{
+        /* padding: 20px; */
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 20px;
+    }
+
+  }
+
+  @media screen and (min-width : 600px){
+    html{
+        font-size: 50%;
+    }
+
+
+    
+}
+
+@media screen and (min-width : 778px){
+    html{
+        font-size: 75%;
+    }
+
+}
+
+@media screen and (min-width : 992px){
+    html{
+        /* font-size: 100%; */
+    }
+
+    /* .navbar{
+        position: sticky;
+        top: 0px;
+     } */
+ 
+}
+
+@media screen and (min-width : 1200px){
+    html{
+        /* font-size: 100%; */
+    }
+
+   
+
+}
